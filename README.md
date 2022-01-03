@@ -26,24 +26,30 @@ Secret → Secret
 
 # Request Flow:
 
-![image]
+![image.png](request-flow.png)
 
 # Process:
 
 - Created secret.yml and refrenced it in mongo.yml(values are base64 encoded - To get base64 values echo -n ‘your-db-username/password’ | base64 in terminal)
-![image]
+![image.png](secret-config.png)
 - Created deployment file mongo.yml
 - Deploying the configuration files using kubectl
-![image]
-![image]
+![image.png](deploy1.png)
+![image.png](deploy2.png)
 - Check the pod status
-![image]
+![image.png](pod-status.png)
 - Creating the internal service(created in same file: mongo.yml)
+![image.png](service-config.png)
+![image.png](servconf1.png)
+![image.png](servconf2.png)
 - Now, creating a configuration file mongo-express.yml
 - Creating mongo-configmap.yml
+![image.png](config-map.png)
 - Deploying the mongo-express.yml and mongo-configmap.yml
+![image.png](deploy3.png)
+![image.png](all.png)
 
-Final Workflow:
-![image]
+# Final Workflow:
+![image.png](final-workflow.png)
 
 
