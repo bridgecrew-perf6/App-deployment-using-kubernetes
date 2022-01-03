@@ -3,7 +3,7 @@ Mongo(mongodb + mongo-express) Application Setup on Kubernetes Cluster
 
 I have deployed two applications mongo-express and mongodb representing complete web application setup in kubernetes pods.
 
-![image]
+![image.png](architecture.png)
 
 K8 Components used:
 
